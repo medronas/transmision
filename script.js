@@ -1,9 +1,20 @@
 WA.room.onLeaveZone('trigger', () => {
-    WA.chat.sendChatMessage("Goodbye!", 'Mr Robot'),
-	WA.room.showLayer('roof1'); 
+  
+	WA.room.showLayer('roof'); 
 });
 
 WA.room.onEnterZone('trigger', () => {
-   WA.chat.sendChatMessage("Welcome!", 'Mr Robot'),
-		WA.room.hideLayer('roof1');
+   
+		WA.room.hideLayer('roof');
+});
+
+
+WA.room.onLeaveZone('party', () => {
+    
+	WA.room.showLayer('partyroof'); 
+});
+
+WA.room.onEnterZone('party', () => {
+   
+		WA.room.hideLayer('partyroof');
 })
