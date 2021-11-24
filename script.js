@@ -8,12 +8,12 @@ WA.room.onEnterZone('trigger', () => {
 		WA.room.hideLayer('roof');
 });
 
-WA.room.onLeaveZone('partytrigger', () => {
+WA.room.onLeaveZone('trigger2', () => {
     
-	WA.room.showLayer('partyroof'); 
+	WA.room.showLayer('roof2'); 
 });
 
-WA.room.onEnterZone('partytrigger', () => {
-    
-		WA.room.hideLayer('partyroof');
+WA.room.onEnterZone('trigger2', () => {
+   
+		WA.room.hideLayer('roof2');
 })
